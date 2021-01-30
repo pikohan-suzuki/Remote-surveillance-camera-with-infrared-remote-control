@@ -10,7 +10,7 @@ import com.amebaownd.pikohan_niwatori.surveillancecameraremotecontrol.util.getVi
 
 class MainActivity :AppCompatActivity(){
 
-        val viewModel:MainViewModel by viewModels{getViewModelFactory()}
+        val viewModel:MainViewModel by viewModels{getViewModelFactory(application)}
 
         override fun onCreate(savedInstanceState:Bundle?){
         super.onCreate(savedInstanceState)
